@@ -8,18 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Talon-Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。">
-<meta name="keywords" content="Ubuntu">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu-18.04安装">
-<meta property="og:url" content="http://yoursite.com/2018/08/21/Ubuntu-18-04-install/index.html">
+  <meta name="description" content="我很丑，但是我敢在街上走">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Talon-Blog">
+<meta property="og:url" content="http://yoursite.com/tags/Ubuntu/index.html">
 <meta property="og:site_name" content="Talon-Blog">
-<meta property="og:description" content="第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。">
+<meta property="og:description" content="我很丑，但是我敢在街上走">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-21T02:14:52.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu-18.04安装">
-<meta name="twitter:description" content="第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。">
+<meta name="twitter:title" content="Talon-Blog">
+<meta name="twitter:description" content="我很丑，但是我敢在街上走">
   
     <link rel="alternative" href="/atom.xml" title="Talon-Blog" type="application/atom+xml">
   
@@ -155,51 +153,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Ubuntu-18-04-install" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Ubuntu-18.04安装
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/08/21/Ubuntu-18-04-install/" class="archive-article-date">
+  	<time datetime="2018-08-20T16:08:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-21</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/08/21/Ubuntu-18-04-install/">Ubuntu-18.04安装</a>
     </h1>
   
 
-        
-        <a href="/2018/08/21/Ubuntu-18-04-install/" class="archive-article-date">
-  	<time datetime="2018-08-20T16:08:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。<br><a id="more"></a></p>
-<h2 id="一：制作系统盘"><a href="#一：制作系统盘" class="headerlink" title="一：制作系统盘"></a>一：制作系统盘</h2><h3 id="1-下载镜像"><a href="#1-下载镜像" class="headerlink" title="1. 下载镜像"></a>1. 下载镜像</h3><p>从 Ubuntu <a href="https://www.ubuntu.com/download/desktop#download" target="_blank" rel="noopener">官网</a>下载镜像文件。</p>
-<h3 id="2-写入硬盘映像"><a href="#2-写入硬盘映像" class="headerlink" title="2. 写入硬盘映像"></a>2. 写入硬盘映像</h3><p><strong>工具：<a href="http://www.ezbsystems.com/ultraiso/download.htm" target="_blank" rel="noopener">UItraISO</a></strong><br>在左下角<strong>“本地目录”</strong>中找到下载好的Ubuntu 18.04镜像文件，<strong>双击</strong>打开，点击顶部菜单栏中<strong>“启动”-“写入硬盘映像”</strong>。在弹出的对话框中，<strong>“硬盘驱动器”</strong>选择要写入的U盘，<strong>“写入方式”</strong>选择”USB-HDD“或”USB-HDD+“，点击<strong>“便捷启动”-“写入新的驱动器引导扇区”-“Syslinux”</strong>，选择<strong>“是”</strong>，完成后点击<strong>“写入”-“是”</strong>。等待完成后<strong>“返回”</strong>，系统盘制作完成。</p>
-<h3 id="3-安装Ubuntu-18-04"><a href="#3-安装Ubuntu-18-04" class="headerlink" title="3. 安装Ubuntu 18.04"></a>3. 安装Ubuntu 18.04</h3><ol>
-<li>进入BIOS，设置制作好的系统盘作为第一启动盘。</li>
-<li>进入安装系统后选择语言为<strong>“中文简体”</strong>，然后选择<strong>“安装Ubuntu”</strong>，键盘选择<strong>“英语（美国）”</strong>。接入WiFi时可以选择<strong>“暂时不想链接wi-fi无线网络”</strong>，更新和其他软件页面选择<strong>“最小安装”</strong>。</li>
-<li>安装类型选择<strong>“其它选项”</strong>。创建分区：<ul>
-<li><strong>创建swap分区</strong>：和内存大小相同 8192MB  逻辑分区  空间起始位置  swap</li>
-<li><strong>创建主分区</strong>：主要存放系统，最少10G 51200MB 主分区  空间起始位置  Ext4 /</li>
-<li><strong>创建boot分区</strong>：8192MB  逻辑分区  空间起始位置  Ext4  /boot</li>
-<li><strong>创建home分区</strong>：主要存放用户文件 204800MB  逻辑分区  空间起始位置  Ext4  /home</li>
-<li><strong>开始安装</strong></li>
-</ul>
-</li>
-<li>区域默认上海，接下来输入用户名密码等信息。安装时间较长。安装完毕后可以选择重新启动。</li>
-</ol>
-<h3 id="4-安装完成"><a href="#4-安装完成" class="headerlink" title="4. 安装完成"></a>4. 安装完成</h3><p>重启后选择Ubuntu，进入Ubuntu 18.04，安装完成。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -211,106 +194,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/21/Ubuntu-18-04-install/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2018/08/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -334,9 +230,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

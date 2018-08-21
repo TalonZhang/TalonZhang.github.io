@@ -8,15 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Talon-Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="我很丑，但是我敢在街上走">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Talon-Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Talon-Blog">
+<meta property="og:description" content="我很丑，但是我敢在街上走">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Talon-Blog">
+<meta name="twitter:description" content="我很丑，但是我敢在街上走">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Talon-Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -172,24 +175,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。</p>
-<h2 id="一：制作系统盘"><a href="#一：制作系统盘" class="headerlink" title="一：制作系统盘"></a>一：制作系统盘</h2><h3 id="1-下载镜像"><a href="#1-下载镜像" class="headerlink" title="1. 下载镜像"></a>1. 下载镜像</h3><p>从 Ubuntu <a href="https://www.ubuntu.com/download/desktop#download" target="_blank" rel="noopener">官网</a>下载镜像文件。</p>
-<h3 id="2-写入硬盘映像"><a href="#2-写入硬盘映像" class="headerlink" title="2. 写入硬盘映像"></a>2. 写入硬盘映像</h3><p><strong>工具：<a href="http://www.ezbsystems.com/ultraiso/download.htm" target="_blank" rel="noopener">UItraISO</a></strong><br>在左下角<strong>“本地目录”</strong>中找到下载好的Ubuntu 18.04镜像文件，<strong>双击</strong>打开，点击顶部菜单栏中<strong>“启动”-“写入硬盘映像”</strong>。在弹出的对话框中，<strong>“硬盘驱动器”</strong>选择要写入的U盘，<strong>“写入方式”</strong>选择”USB-HDD“或”USB-HDD+“，点击<strong>“便捷启动”-“写入新的驱动器引导扇区”-“Syslinux”</strong>，选择<strong>“是”</strong>，完成后点击<strong>“写入”-“是”</strong>。等待完成后<strong>“返回”</strong>，系统盘制作完成。</p>
-<h3 id="3-安装Ubuntu-18-04"><a href="#3-安装Ubuntu-18-04" class="headerlink" title="3. 安装Ubuntu 18.04"></a>3. 安装Ubuntu 18.04</h3><ol>
-<li>进入BIOS，设置制作好的系统盘作为第一启动盘。</li>
-<li>进入安装系统后选择语言为<strong>“中文简体”</strong>，然后选择<strong>“安装Ubuntu”</strong>，键盘选择<strong>“英语（美国）”</strong>。接入WiFi时可以选择<strong>“暂时不想链接wi-fi无线网络”</strong>，更新和其他软件页面选择<strong>“最小安装”</strong>。</li>
-<li>安装类型选择<strong>“其它选项”</strong>。创建分区：<ul>
-<li><strong>创建swap分区</strong>：和内存大小相同 8192MB  逻辑分区  空间起始位置  swap</li>
-<li><strong>创建主分区</strong>：主要存放系统，最少10G 51200MB 主分区  空间起始位置  Ext4 /</li>
-<li><strong>创建boot分区</strong>：8192MB  逻辑分区  空间起始位置  Ext4  /boot</li>
-<li><strong>创建home分区</strong>：主要存放用户文件 204800MB  逻辑分区  空间起始位置  Ext4  /home</li>
-<li><strong>开始安装</strong></li>
-</ul>
-</li>
-<li>区域默认上海，接下来输入用户名密码等信息。安装时间较长。安装完毕后可以选择重新启动。</li>
-</ol>
-<h3 id="4-安装完成"><a href="#4-安装完成" class="headerlink" title="4. 安装完成"></a>4. 安装完成</h3><p>重启后选择Ubuntu，进入Ubuntu 18.04，安装完成。</p>
-
+        <p>第一篇博客，记录一下Ubuntu 18.04的安装过程，避免以后再装系统的时候去百度。<br>
+        
       
 
       
@@ -197,6 +184,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -238,29 +236,21 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/18/hello-world/">Hello World</a>
+      <a class="article-title" href="/2018/08/19/hello-world/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2018/08/18/hello-world/" class="archive-article-date">
-  	<time datetime="2018-08-18T09:12:02.730Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-18</time>
+        <a href="/2018/08/19/hello-world/" class="archive-article-date">
+  	<time datetime="2018-08-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br>
+        
       
 
       
@@ -272,7 +262,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/18/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/08/19/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -334,7 +324,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -394,6 +384,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
