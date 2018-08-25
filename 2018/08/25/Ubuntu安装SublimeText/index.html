@@ -8,16 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Talon-Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我很丑，但是我敢在街上走">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Talon-Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/08/index.html">
+  <meta name="description" content="Ubuntu18.04下安装Sublime Text3，16.04的方法已经不适用。">
+<meta name="keywords" content="Ubuntu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu安装SublimeText">
+<meta property="og:url" content="http://yoursite.com/2018/08/25/Ubuntu安装SublimeText/index.html">
 <meta property="og:site_name" content="Talon-Blog">
-<meta property="og:description" content="我很丑，但是我敢在街上走">
+<meta property="og:description" content="Ubuntu18.04下安装Sublime Text3，16.04的方法已经不适用。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-25T04:04:57.670Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Talon-Blog">
-<meta name="twitter:description" content="我很丑，但是我敢在街上走">
+<meta name="twitter:title" content="Ubuntu安装SublimeText">
+<meta name="twitter:description" content="Ubuntu18.04下安装Sublime Text3，16.04的方法已经不适用。">
   
     <link rel="alternative" href="/atom.xml" title="Talon-Blog" type="application/atom+xml">
   
@@ -153,36 +155,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Ubuntu安装SublimeText" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Ubuntu安装SublimeText
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/25/Ubuntu安装SublimeText/" class="archive-article-date">
+
+        
+        <a href="/2018/08/25/Ubuntu安装SublimeText/" class="archive-article-date">
   	<time datetime="2018-08-25T04:03:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/25/Ubuntu安装SublimeText/">Ubuntu安装SublimeText</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Ubuntu18.04下安装Sublime Text3，16.04的方法已经不适用。<br><a id="more"></a><br>按顺序执行下面命令安装</p>
+<blockquote>
+<p>wget -qO -<a href="https://download.sublimetext.com/sublimehq-pub.gpg" target="_blank" rel="noopener">https://download.sublimetext.com/sublimehq-pub.gpg</a> | sudo apt-key add -<br>sudo apt-get install apt-transport-https<br>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list<br>sudo apt-get update<br>sudo apt-get install sublime-text</p>
+</blockquote>
+<p>执行完以上几步就安装成功了,接下来是解决在Ubuntu下sublime不能输入中文的问题。</p>
+<blockquote>
+<p>git clone <a href="https://github.com/lyfeyaj/sublime-text-imfix.git" target="_blank" rel="noopener">https://github.com/lyfeyaj/sublime-text-imfix.git</a><br>cd sublime-text-imfix &amp;&amp; ./sublime-imfix</p>
+</blockquote>
+<p>重启OK</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,122 +203,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/25/Ubuntu安装SublimeText/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/23/jQuery-selector/" class="archive-article-date">
-  	<time datetime="2018-08-23T15:55:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/23/jQuery-selector/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jQuery选择器</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/23/jQuery-selector/">jQuery选择器</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/21/Ubuntu-18-04-install/" class="archive-article-date">
-  	<time datetime="2018-08-20T16:08:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/21/Ubuntu-18-04-install/">Ubuntu-18.04安装</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/19/hello-world/" class="archive-article-date">
-  	<time datetime="2018-08-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/19/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -338,8 +331,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
